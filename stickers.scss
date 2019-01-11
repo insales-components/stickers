@@ -1,0 +1,27 @@
+.sticker {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  background-color: $color-link-primary;
+  color: #fff;
+  z-index: 2;
+}
+.sticker-new {
+  background-color: $color-link-secondary;
+}
+.sticker-hit {
+  background-color: $color-link-primary;
+}
+.sticker-sale {
+  background-color: $color-link-secondary;
+}
+.sticker + .sticker {
+  top: 50px;
+}
+.sticker:nth-child(2) + .sticker {
+  top: 100px;
+}
+.sticker:nth-child(3) + .sticker {
+  top: 150px;
+}

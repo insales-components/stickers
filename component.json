@@ -1,0 +1,16 @@
+{
+  "name": "stickers",
+  "version": "1.0.0",
+  "description": "Стикеры товара",
+  "author": "LiquidHub.ru",
+  "type": "snippets",
+  "homepage": "https://github.com/insales-components/stickers",
+  "props": {
+    "common": false,
+    "liquid": true
+  },
+  "plugins": [],
+  "dependencies": {
+    "scss_variables": "https://github.com/insales-components/scss_variables"
+  }
+}
