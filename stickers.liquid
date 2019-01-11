@@ -1,11 +1,13 @@
 {%- assign stickers_list = '' -%}
 {%- if product.properties.sticker -%}
   {%- for characteristic in product.properties.sticker.characteristics -%}
-    {%- capture main_stickers -%}<div class="sticker sticker-{{ characteristic.handle }}">{{ characteristic.title }}</div>{%- endcapture -%}
+    {%- capture main_sticker -%}<div class="sticker sticker-{{ characteristic.handle }}">{{ characteristic.title }}</div>{%- endcapture -%}
     {%- assign stickers_list = stickers_list | append: main_sticker -%}
     {%- assign main_sticker = null -%}
   {%- endfor -%}
 {%- endif -%}
+{%- if stickers_list != '' -%}
 <div class="stickers">
-  {{ main_stickers }}
+  {{ stickers_list }}
 </div>
+{%- endif -%}
